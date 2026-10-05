@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID - Analytics Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Responsive video container styling */
+        .video-wrapper {
+            width: 100%;
+            margin-top: 15px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .video-wrapper video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar">
+        <div class="logo-container">
+            <img src="logo.svg" alt="Company Logo" class="logo-icon" width="28" height="28">
+            <span class="company-name">InsightDolphin</span>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+        <span class="badge">PowerBI Dashboard Extensions</span>
+        <h1>Advanced Charts</h1>
+        <p class="subtitle">Click any chart card below to view setup instructions.</p>
+
+        <!-- Flexible Grid Container (3 Tiles) -->
+        <div class="chart-grid">
+            
+            <!-- Chart Card 1: Radar Chart -->
+            <div class="chart-card" data-title="Radar Chart" data-type="radar">
+                <div class="card-header">
+                    <h3>Radar Chart</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="chart-visual">
+                    <svg viewBox="0 0 200 200" class="svg-chart">
+                        <!-- Subtle Thin Underlayer Grid Rings -->
+                        <polygon points="100,20 176,64 176,152 100,196 24,152 24,64" fill="none" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <polygon points="100,50 148,78 148,134 100,162 52,134 52,78" fill="none" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <polygon points="100,80 119,91 119,113 100,124 81,113 81,91" fill="none" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        
+                        <!-- Thin Radial Grid Axes -->
+                        <line x1="100" y1="100" x2="100" y2="20" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <line x1="100" y1="100" x2="176" y2="64" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <line x1="100" y1="100" x2="176" y2="152" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <line x1="100" y1="100" x2="100" y2="196" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <line x1="100" y1="100" x2="24" y2="152" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+                        <line x1="100" y1="100" x2="24" y2="64" stroke="#8b949e" stroke-width="1" stroke-opacity="0.2"/>
+
+                        <!-- Series 1: Blue Series -->
+                        <polygon points="100,35 160,73 130,124 100,170 45,140 38,72" fill="rgba(47, 129, 247, 0.25)" stroke="#2f81f7" stroke-width="2"/>
+                        <circle cx="100" cy="35" r="3" fill="#58a6ff"/>
+                        <circle cx="160" cy="73" r="3" fill="#58a6ff"/>
+                        <circle cx="130" cy="124" r="3" fill="#58a6ff"/>
+                        <circle cx="100" cy="170" r="3" fill="#58a6ff"/>
+                        <circle cx="45" cy="140" r="3" fill="#58a6ff"/>
+                        <circle cx="38" cy="72" r="3" fill="#58a6ff"/>
+
+                        <!-- Series 2: Emerald Green Series -->
+                        <polygon points="100,60 142,82 155,135 100,145 60,115 50,80" fill="rgba(63, 185, 80, 0.25)" stroke="#3fb950" stroke-width="2"/>
+                        <circle cx="100" cy="60" r="3" fill="#3fb950"/>
+                        <circle cx="142" cy="82" r="3" fill="#3fb950"/>
+                        <circle cx="155" cy="135" r="3" fill="#3fb950"/>
+                        <circle cx="100" cy="145" r="3" fill="#3fb950"/>
+                        <circle cx="60" cy="115" r="3" fill="#3fb950"/>
+                        <circle cx="50" cy="80" r="3" fill="#3fb950"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Chart Card 2: Sankey Chart -->
+            <div class="chart-card" data-title="Sankey Chart" data-type="sankey">
+                <div class="card-header">
+                    <h3>Sankey Chart</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="chart-visual">
+                    <svg viewBox="0 0 330 200" class="svg-chart">
+                        <defs>
+                            <linearGradient id="flow-1-2a" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#2f81f7" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#3fb950" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <linearGradient id="flow-1-2b" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#a371f7" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#a371f7" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <linearGradient id="flow-2-3a" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#3fb950" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#2f81f7" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <linearGradient id="flow-2-3b" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#a371f7" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#3fb950" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <linearGradient id="flow-3-4a" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#a371f7" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#f0883e" stop-opacity="0.35"/>
+                            </linearGradient>
+                            <linearGradient id="flow-3-4b" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#3fb950" stop-opacity="0.35"/>
+                                <stop offset="100%" stop-color="#3fb950" stop-opacity="0.35"/>
+                            </linearGradient>
+                        </defs>
+
+                        <!-- FLOW RIBBONS: Set 1 (x=16) -> Set 2 (x=110) -->
+                        <path d="M 16,20 C 60,20 70,25 110,25 L 110,75 C 70,75 60,45 16,45 Z" fill="url(#flow-1-2a)"/>
+                        <path d="M 16,47 C 60,47 70,125 110,125 L 110,165 C 70,165 60,85 16,85 Z" fill="url(#flow-1-2b)"/>
+                        <path d="M 16,95 C 60,95 70,75 110,75 L 110,105 C 70,105 60,120 16,120 Z" fill="url(#flow-1-2b)"/>
+                        <path d="M 16,122 C 60,122 70,165 110,165 L 110,180 C 70,180 60,145 16,145 Z" fill="rgba(63, 185, 80, 0.35)"/>
+                        <path d="M 16,155 C 60,155 70,115 110,115 L 110,135 C 70,135 60,185 16,185 Z" fill="url(#flow-1-2b)"/>
+
+                        <!-- FLOW RIBBONS: Set 2 (x=116) -> Set 3 (x=210) -->
+                        <path d="M 116,25 C 160,25 170,20 210,20 L 210,58 C 170,58 160,75 116,75 Z" fill="url(#flow-2-3a)"/>
+                        <path d="M 116,75 C 160,75 170,75 210,75 L 210,125 C 170,125 160,105 116,105 Z" fill="url(#flow-2-3a)"/>
+                        <path d="M 116,115 C 160,115 170,135 210,135 L 210,175 C 170,175 160,180 116,180 Z" fill="url(#flow-2-3b)"/>
+
+                        <!-- FLOW RIBBONS: Set 3 (x=216) -> Set 4 (x=310) -->
+                        <path d="M 216,20 C 260,20 270,20 310,20 L 310,80 C 270,80 260,58 216,58 Z" fill="url(#flow-3-4a)"/>
+                        <path d="M 216,75 C 260,75 270,80 310,80 L 310,110 C 270,110 260,125 216,125 Z" fill="url(#flow-3-4a)"/>
+                        <path d="M 216,135 C 260,135 270,130 310,130 L 310,185 C 270,185 260,175 216,175 Z" fill="url(#flow-3-4b)"/>
+
+                        <!-- SET 1 NODE PILLARS -->
+                        <rect x="10" y="20" width="6" height="65" rx="0" fill="#2f81f7"/>
+                        <rect x="10" y="95" width="6" height="50" rx="0" fill="#a371f7"/>
+                        <rect x="10" y="155" width="6" height="30" rx="0" fill="#3fb950"/>
+
+                        <!-- SET 2 NODE PILLARS -->
+                        <rect x="110" y="25" width="6" height="80" rx="0" fill="#3fb950"/>
+                        <rect x="110" y="115" width="6" height="65" rx="0" fill="#a371f7"/>
+
+                        <!-- SET 3 NODE PILLARS -->
+                        <rect x="210" y="20" width="6" height="38" rx="0" fill="#a371f7"/>
+                        <rect x="210" y="75" width="6" height="50" rx="0" fill="#2f81f7"/>
+                        <rect x="210" y="135" width="6" height="40" rx="0" fill="#3fb950"/>
+
+                        <!-- SET 4 NODE PILLARS -->
+                        <rect x="310" y="20" width="6" height="90" rx="0" fill="#f0883e"/>
+                        <rect x="310" y="130" width="6" height="55" rx="0" fill="#3fb950"/>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Chart Card 3: Venn Chart -->
+            <div class="chart-card" data-title="Venn Chart" data-type="venn">
+                <div class="card-header">
+                    <h3>Venn Chart</h3>
+                    <span class="status-dot"></span>
+                </div>
+                <div class="chart-visual">
+                    <svg viewBox="0 0 240 200" class="svg-chart">
+                        <!-- Circle Set A (Medium) -->
+                        <circle cx="85" cy="80" r="50" fill="rgba(47, 129, 247, 0.35)" stroke="#2f81f7" stroke-width="2"/>
+                        <!-- Circle Set B (Large) -->
+                        <circle cx="145" cy="85" r="65" fill="rgba(63, 185, 80, 0.35)" stroke="#3fb950" stroke-width="2"/>
+                        <!-- Circle Set C (Small) -->
+                        <circle cx="105" cy="135" r="40" fill="rgba(163, 113, 247, 0.35)" stroke="#a371f7" stroke-width="2"/>
+                        <!-- Overlap Core Highlight -->
+                        <circle cx="112" cy="102" r="7" fill="#f0f6fc" opacity="0.8"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Dynamic Instruction Panel -->
+        <div id="instruction-panel" class="instruction-panel hidden">
+            <div class="panel-header">
+                <h2 id="instruction-heading">How to set up the Chart</h2>
+                <button id="close-btn" class="close-btn">&times;</button>
+            </div>
+            <div id="instruction-content" class="instruction-content"></div>
+        </div>
+		
+		<!-- Contact Us Section -->
+		<footer class="contact-section">
+			<div class="contact-container">
+				<h3>Contact Us</h3>
+				<!--<p>Have questions about integrating these custom charts or need custom Power BI visuals?</p>
+				<a href="contact.html" class="contact-btn">Get in Touch</a> -->
+				<span class="contact-info">Email: zhou@insightdolphin.com</span>
+				<span class="contact-info">Address: 20-22 Wenlock Road, London, England, N1 7GU</span>
+				<span class="contact-info">Company Number: 07412592</span>
+			</div>
+		</footer>
+
+    </main>
+
+    <script>
+        // File paths for your MP4 recordings
+        // Make sure your mp4 files are saved in the same directory as index.html (or update paths accordingly)
+        const chartDocs = {
+            'radar': {
+                description: 'Radar charts compare performance metrics across multiple axes, with support for overlapping series.',
+                videoSrc: 'pradar.mp4'
+            },
+            'sankey': {
+                description: 'Sankey diagrams depict flow quantities across multiple sequential stages using smooth bezier streams.',
+                videoSrc: 'psankey.mp4'
+            },
+            'venn': {
+                description: 'Venn diagrams illustrate logical relationships, similarities, and intersections between groups of datasets.',
+                videoSrc: 'pvenn.mp4'
+            }
+        };
+
+        // Attach Event Listeners to Cards
+        const cards = document.querySelectorAll('.chart-card');
+        const panel = document.getElementById('instruction-panel');
+        const heading = document.getElementById('instruction-heading');
+        const content = document.getElementById('instruction-content');
+        const closeBtn = document.getElementById('close-btn');
+
+        cards.forEach(card => {
+            card.addEventListener('click', function () {
+                const title = this.getAttribute('data-title');
+                const type = this.getAttribute('data-type');
+                const doc = chartDocs[type];
+
+                heading.innerText = `How to set up the ${title}`;
+                content.innerHTML = `
+                    <p>${doc.description}</p>
+                    <h4>Video Tutorial:</h4>
+                    <div class="video-wrapper">
+                        <video controls preload="metadata">
+                            <source src="${doc.videoSrc}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                `;
+
+                cards.forEach(c => c.classList.remove('active'));
+                this.classList.add('active');
+
+                panel.classList.remove('hidden');
+                panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+        });
+
+        closeBtn.addEventListener('click', function () {
+            panel.classList.add('hidden');
+            cards.forEach(c => c.classList.remove('active'));
+        });
+    </script>
+</body>
+</html>

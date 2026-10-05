@@ -1,0 +1,229 @@
+/* Base Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #f0f6fc;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 0 2rem;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.company-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f0f6fc;
+    letter-spacing: 1px;
+}
+
+/* Main Layout */
+.content-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #58a6ff;
+    background-color: rgba(56, 139, 253, 0.15);
+    border: 1px solid rgba(56, 139, 253, 0.4);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.content-container h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #f0f6fc;
+}
+
+.subtitle {
+    color: #fff; /*#8b949e;*/
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Flexible Chart Grid */
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Chart Cards */
+.chart-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.chart-card:hover {
+    border-color: #58a6ff;
+    transform: translateY(-2px);
+}
+
+.chart-card.active {
+    border-color: #2f81f7;
+    box-shadow: 0 0 0 2px rgba(47, 129, 247, 0.4);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-header h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #f0f6fc;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #3fb950;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(63, 185, 80, 0.6);
+}
+
+/* SVG Chart Graphics Container */
+.chart-visual {
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-chart {
+    width: 100%;
+    height: 100%;
+}
+
+.pie-svg {
+    max-width: 180px;
+    transform: rotate(-90deg);
+}
+
+/* Instruction Panel */
+.instruction-panel {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin-top: 1rem;
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.instruction-panel.hidden {
+    display: none !important;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #21262d;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.panel-header h2 {
+    font-size: 1.3rem;
+    color: #f0f6fc;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: #8b949e;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #f0f6fc;
+}
+
+.instruction-content p {
+    color: #8b949e;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+}
+
+.instruction-content h4 {
+    color: #f0f6fc;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.instruction-content pre {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow-x: auto;
+}
+
+.instruction-content code {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, monospace;
+    color: #3fb950;
+    font-size: 0.85rem;
+}
+
+.contact-section {
+    margin-top: 80px; /* Increase this number (e.g., 60px, 80px, 100px) for more space */
+    padding: 24px;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-info {
+    display: block;        /* Forces each span onto its own new line */
+    margin-bottom: 6px;   /* Adds a tiny gap between rows */
+    color: #8b949e;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
